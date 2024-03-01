@@ -14,7 +14,7 @@ with st.sidebar:
     show_visualizations_holiday = st.checkbox("Tampilkan data hari libur dengan jumlah sewa sepeda harian")
     show_visualizations_season = st.checkbox("Tampilkan data pengaruh musim terhadap jumlah sewa sepeda harian")
 # Load data
-bike_df = pd.read_csv('all_data.csv')  # Replace 'your_dataset.csv' with your actual dataset file
+bike_df = pd.read_csv('/Dashboard/all_data.csv')  # Replace 'your_dataset.csv' with your actual dataset file
 
 # Group data for holiday vs non-holiday
 seasonal_data = bike_df.groupby('holiday_day')['cnt_day'].mean()
